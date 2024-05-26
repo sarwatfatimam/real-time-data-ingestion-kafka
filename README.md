@@ -73,3 +73,5 @@ rver localhost:9092`
 4. producer.py contains a basic code for sending events. The events can be viewed on the console as mentioned in
 initial setup. 
 ![img.png](images/producer-py.png)
+5. consumer.py contains a basic code for receiving and listing events. 
+![img.png](images/consumer-py.png)
