@@ -1,10 +1,10 @@
-**Real Time Data Ingestion Kafka**
+# Real Time Data Ingestion Kafka
 
 A beginner-level project demonstrating real-time data ingestion using Apache Kafka. 
 This project includes a producer script to send messages to a Kafka topic and a consumer script to read messages from the topic,
 all implemented in Python.
 
-**What is Apache Kafka?**
+## What is Apache Kafka?
 
 Apache kafka is a distributed event streaming platform that 
 stores ordered sequence of events in logs often called topics. It lets you read, write,
@@ -26,7 +26,7 @@ to configure and deploy them.
 Kafka streams is a java API that can help aggregate, group, join or filter multiple events
 without writing extensive code within the programs or services that consumes events from topics. 
 
-**Initial Setup**
+## Initial Setup
 
 1. Create a repository on the local computer named "real-time-data-ingestion-kafka" and publish it on Github. 
 2. Create a new branch called "feature/init-setup" from the main branch. 
@@ -65,8 +65,11 @@ rver localhost:9092`
 17. We can list Kafka topics by running the following command. 
 `bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092`
 
-**Producing and Consuming Kafka messages using Python Client**
+## Producing and Consuming Kafka messages using Python Client
 1. Activate conda environment created in the initial setup. 
 2. Install Kafka Python client using the following command. 
-`pip install kafka-python`
-
+`pip install kafka-python` 
+3. Documentation for kafka-python API is available here: https://kafka-python.readthedocs.io/en/master/apidoc/modules.html
+4. producer.py contains a basic code for sending events. The events can be viewed on the console as mentioned in
+initial setup. 
+![img.png](images/producer-py.png)
